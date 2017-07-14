@@ -14,7 +14,7 @@ public class MyApplication extends Application{
     @Override
     public void onCreate() {
 
-        Fresco.initialize(this, FImageLoaderConfig.getImagePipelineConfig(this));
+
         NetworkMgr.getInstance().init(this,true);
 
         super.onCreate();
