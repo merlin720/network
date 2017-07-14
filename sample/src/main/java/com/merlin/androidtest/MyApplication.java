@@ -2,11 +2,10 @@ package com.merlin.androidtest;
 
 import android.app.Application;
 
-import com.facebook.drawee.backends.pipeline.Fresco;
 import com.merlin.network.NetworkMgr;
 
 /**
- * Created by zhouyang on 2017/2/28.
+ * Created by merlin on 2017/2/28.
  */
 
 public class MyApplication extends Application{

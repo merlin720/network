@@ -20,13 +20,10 @@ public class MyMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_main);
-
         addListener();
     }
 
-
     private void addListener() {
-
 
         findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,12 +41,6 @@ public class MyMainActivity extends AppCompatActivity {
                 });
             }
         });
-    }
-
-    private void loadData() {
-
-
-
     }
 
 
