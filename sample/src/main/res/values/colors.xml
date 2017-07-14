@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="mx_driver_background_color">#ffffffff</color>
+    <color name="mx_app_item_pressed">#ffe4e4e4</color>
+</resources>
