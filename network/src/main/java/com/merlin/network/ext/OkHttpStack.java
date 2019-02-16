@@ -95,12 +95,16 @@ public class OkHttpStack implements INetWork {
             if (request instanceof UpLoadRequest) {
                 MultipartBody.Builder mbody = new MultipartBody.Builder().setType(MultipartBody.FORM);
                 Iterator iter = request.getParams().entrySet().iterator();
+                if (request.mPath != null && request.mPath.size()>0) {
+                    for (String s : request.mPath) {
+                        if (!TextUtils.isEmpty(s)) {
+                            NestLog.v("merlin_____________UpLoadRequest" + request.mPath);
+                            File file = new File(s);
+                            Log.i("imageName:", file.getName());
+                            mbody.addFormDataPart("img", file.getName(), RequestBody.create(MEDIA_TYPE_PNG, file));
+                        }
+                    }
 
-                if (!TextUtils.isEmpty(request.mPath)) {
-                    NestLog.v("merlin_____________UpLoadRequest"+request.mPath);
-                    File file = new File(request.mPath);
-                    Log.i("imageName:", file.getName());
-                    mbody.addFormDataPart("img", file.getName(), RequestBody.create(MEDIA_TYPE_PNG, file));
                 }
 
                 while (iter.hasNext()) {

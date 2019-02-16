@@ -31,11 +31,12 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public abstract class Request<T> implements Comparable<Request>, IResponseParser {
 
-    public String mPath;
+    public List<String> mPath;
 
     /**
      * 默认参数编码

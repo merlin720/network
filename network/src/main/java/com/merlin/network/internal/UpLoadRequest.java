@@ -11,6 +11,7 @@ import com.merlin.network.internal.utils.NestLog;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 
@@ -25,7 +26,7 @@ public class UpLoadRequest<T> extends Request<T> {
 
     private final static String BOUNDARY = "----HV2ymHFg03ehbqgZCaKO6jyH";
 
-    public UpLoadRequest(Class<T> generalClass, HttpMethod method, Map<String, ?> params, String url, HttpListener<T> listener,String path) {
+    public UpLoadRequest(Class<T> generalClass, HttpMethod method, Map<String, ?> params, String url, HttpListener<T> listener, List<String> path) {
         super(generalClass, method, url, listener);
         this.params = params;
         super.initData();
