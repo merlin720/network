@@ -24,3 +24,5 @@ you can use with gradle
                 
                 
 第一个参数是请求返回接口的bean，第二个参数是url，第三个请求需要的参数，第四个是一个回调
+ 
+[wiki](https://github.com/merlin720/network/blob/master/README.md)
